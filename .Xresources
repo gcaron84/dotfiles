@@ -1,0 +1,13 @@
+xterm*loginshell: true
+xterm*faceName: Hack Mono
+xterm*faceSize: 10
+xterm*eightBitInput:false
+xterm*background: black
+xterm*foreground: white
+xterm*rightScrollBar: true
+xterm*ScrollBar: true
+
+urxvt*background: black
+urxvt*foreground: grey
+URxvt.font: xft:hack:size=10
+URxvt.perl-ext-common: tabbed
