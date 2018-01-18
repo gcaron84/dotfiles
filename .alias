@@ -1,0 +1,97 @@
+alias reload="source ~/.alias;source ~/.profile"
+alias vi="nvim"
+alias vial="vi ~/.alias"
+alias ~="cd ~"
+alias -- --=cd" -"
+alias cl="clear"
+alias nh='unset HISTFILE'
+
+alias fuck="sudo !!"
+
+alias ls="ls -h --color=auto"
+alias sl="ls"
+alias ll="ls -l"
+alias lt="ls -ltr"
+alias lS="ls -1Ssr"
+alias la="ls -lA"
+alias bc="bc -lq"
+alias du="du -h"
+alias df="df -h"
+alias fd="find"
+alias md="mkdir -p"
+alias rd="rmdir -p"
+
+alias pg="less -R"
+alias gr="grep --color=auto -P"
+alias g="git"
+
+alias sc="scrot -s"
+
+alias lc="ccze -A | less -R"
+alias rs="rsync -ahSH --stats --info=progress2"
+
+alias ns="nslookup"
+alias yt="youtube-dl -f best"
+alias ipinfo="curl https://ipinfo.io"
+alias wttr="curl http://wttr.in/"
+
+alias moo="fortune | cowsay"
+
+# help
+alias wi="whatis"
+alias ap="apropos"
+alias wh="which"
+
+alias fx="firefox"
+alias f\?="firefox --search"
+alias tb="thunderbird -compose"
+
+# volume
+alias v+="pactl set-sink-volume @DEFAULT_SINK@ +5%"
+alias v-="pactl set-sink-volume @DEFAULT_SINK@ -5%"
+alias vM="pactl set-sink-mute @DEFAULT_SINK@ toggle"
+
+# hardware
+alias um="udisksctl mount -b"
+alias uM="udisksctl unmount -b"
+alias ul="udisksctl unlock -b"
+alias uL="udisksctl lock -b"
+alias wfon="nmcli radio all on"
+alias wfoff="nmcli radio all off"
+
+
+# buffer
+alias buf='xsel -i'
+# paste buffer
+alias pbuf='xsel -o'
+
+# ask passwords
+alias rp='read -s SSHPASS ; export SSHPASS'
+# password in buffer
+alias pwbuf='echo "$SSHPASS" | xsel -i'
+# password in clipboard
+alias pwcl='echo "$SSHPASS" | xsel -i -b'
+
+# ssh
+alias sp="sshpass -e"
+alias sssh="sshpass -e ssh"
+alias sscp="sshpass -e scp"
+alias ssftp="sshpass -e sftp"
+
+alias vb="VBoxManage"
+
+alias bt="bluetoothctl"
+
+alias bton="bt-adapter --set Powered 1"
+alias btoff="bt-adapter --set Powered 0"
+
+# music
+alias qm="qmmp"
+alias qi="qmmp --status"
+alias qc="qmmp --play-pause"
+alias qb="qmmp --next"
+alias qz="qmmp --previous"
+alias bl="beet ls"
+alias br="beet random -ap"
+alias bp="beet play"
+alias be="beet play -A --enqueue"
