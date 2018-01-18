@@ -2,6 +2,7 @@ alias reload="source ~/.alias;source ~/.profile"
 alias vi="nvim"
 alias vial="vi ~/.alias"
 alias ~="cd ~"
+alias ..="cd .."
 alias -- --=cd" -"
 alias cl="clear"
 alias nh='unset HISTFILE'
@@ -41,6 +42,7 @@ alias moo="fortune | cowsay"
 alias wi="whatis"
 alias ap="apropos"
 alias wh="which"
+alias hman="man -Hfirefox"
 
 alias fx="firefox"
 alias f\?="firefox --search"
@@ -100,3 +102,8 @@ alias bl="beet ls"
 alias br="beet random -ap"
 alias bp="beet play"
 alias be="beet play -A --enqueue"
+
+alias dup="duplicity"
+
+# 
+alias susp="systemctl suspend"
