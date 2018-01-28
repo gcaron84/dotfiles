@@ -1,12 +1,20 @@
-# 
-source ~/.profile
-source ~/.alias
+# history
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=0
 
-# Enable Ctrl-x-e to edit command line
+# keybindings
+bindkey -e
 autoload -U edit-command-line
 zle -N edit-command-line
+
+# Enable Ctrl-x-e to edit command line
 bindkey '^xe' edit-command-line
 bindkey '^x^e' edit-command-line
 
-# extensions
-alias -s m3u="qmmp -e"
+autoload -Uz compinit
+compinit
+
+source ~/.alias
+source ~/.extensions
+source ~/.profile
